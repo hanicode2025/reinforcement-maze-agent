@@ -1,7 +1,10 @@
 from environment import GridWorld
 from agent import QLearningAgent
 import matplotlib.pyplot as plt
-
+import numpy as np
+import random
+random.seed(42)
+np.random.seed(42)
 # Initialize environment
 env = GridWorld(
     width=5, height=5,
